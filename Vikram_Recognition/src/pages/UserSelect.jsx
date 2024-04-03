@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 const accounts = [
   {
     id: "374ed1e4-481b-4074-a26e-6137657c6e35",
-    fullName: "Ankit Kumar",
+    fullName: "Vikram Yadav",
     picture: "374ed1e4-481b-4074-a26e-6137657c6e35/1.jpg",
   },
   {
     id: "43332f46-89a4-435c-880e-4d72bb51149a",
-    fullName: "Ankit Kumar Professional Version",
+    fullName: "Naman Shukla",
     picture: "43332f46-89a4-435c-880e-4d72bb51149a/1.jpg",
   },
 ];
@@ -182,7 +182,7 @@ function UserSelect() {
             state={{ account: selected }}
             className="mt-4 inline-flex items-center rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600"
           >
-            Proceed Further
+            Next Step
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
