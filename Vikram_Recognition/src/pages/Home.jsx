@@ -16,7 +16,7 @@ function Home() {
             Developed By
           </h1>
           <h1 className="block text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-900">
-            Ankit Kumar
+            Vikram Yadav
           </h1>
           <p className="mt-8 text-md text-gray-600 max-w-3xl mx-4 md:mx-16 lg:mx-auto">
             Developing a web application that captures live webcam data and
