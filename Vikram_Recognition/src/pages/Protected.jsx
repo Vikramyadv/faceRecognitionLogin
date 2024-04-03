@@ -56,7 +56,6 @@ function Protected() {
               color: "#3CB0AD",
               textAlign: "center",
               marginBottom: "30px",
-              lineHeight: "1.5",
             }}
           >
             {account?.fullName}
