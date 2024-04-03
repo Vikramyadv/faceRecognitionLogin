@@ -1,59 +1,103 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Container, Typography, Button, Grid } from "@mui/material";
 
 function Home() {
   return (
-    <div className="bg-yellow py-40 md:pb-24">
-      <div className="mx-auto max-w-7xl">
-        <div className="text-center mb-24">
-          <h1 className="block text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            Welcome To
-          </h1>
-          <h1 className="block text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-600 mb-6">
-            Face Recognition App
-          </h1>
-          <h1 className="block text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-            Developed By
-          </h1>
-          <h1 className="block text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-900">
-            Vikram Yadav
-          </h1>
-          <p className="mt-8 text-md text-gray-600 max-w-3xl mx-4 md:mx-16 lg:mx-auto">
-            Developing a web application that captures live webcam data and
-            employs face recognition technology to identify and tag faces in the
-            webcam feed not only showcases proficiency in full-stack development
-            but also a deep understanding of AI integration and serverless
-            deployment, highlighting the ability to create interactive,
-            real-time applications that leverage the latest in cloud computing
-            and machine learning advancements for a seamless user experience.
-          </p>
-          <Link
-            to={"/user-select"}
-            className="flex gap-2 mt-12 w-fit mx-auto cursor-pointer z-10 py-3 px-6 rounded-full bg-gradient-to-r from-yellow-300 to-yellow-500"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="white"
-              className="w-6 h-6"
+    <div
+      style={{
+        paddingTop: "40px",
+        paddingBottom: "24px",
+        width: "90%",
+        border: "inset",
+        margin: "auto",
+      }}
+    >
+      <Container maxWidth="lg">
+        <Grid container justifyContent="center" alignItems="center" spacing={4}>
+          <Grid item xs={12} textAlign="center">
+            <Typography
+              sx={{
+                fontFamily: "Avenir",
+                fontWeight: 800,
+                fontSize: "40px",
+                lineHeight: "39.65px",
+                color: "#242424",
+              }}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
-              />
-            </svg>
-            <span className="text-black">Log In Using Face Recognition</span>
-          </Link>
-        </div>
-      </div>
+              Welcome To
+            </Typography>
+            <Typography
+              variant="h3"
+              component="h1"
+              gutterBottom
+              sx={{
+                fontFamily: "Permanent Marker",
+                fontWeight: 400,
+                fontSize: "35px",
+                lineHeight: "59.47px",
+                color: "#3CB0AD",
+              }}
+            >
+              Face Recognition App
+            </Typography>
+
+            <Typography
+              variant="body1"
+              gutterBottom
+              sx={{
+                fontFamily: "Permanent Marker",
+                fontWeight: 400,
+                fontSize: "20px",
+                color: "black",
+                width: "80%",
+                margin: "0 auto",
+              }}
+            >
+              Creating a web app that captures live webcam data, utilizing
+              advanced face recognition tech for real-time face tagging.
+              Demonstrating expertise in full-stack development, AI integration,
+              and serverless deployment, our aim is to deliver interactive
+              experiences leveraging the latest in cloud computing and machine
+              learning!
+            </Typography>
+            <Link to="/user-select" style={{ textDecoration: "none" }}>
+              <Button
+                variant="contained"
+                sx={{
+                  mt: 12,
+                  backgroundImage:
+                    "linear-gradient(to right, #FFFF00, #FFA500)",
+                  color: "black",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  width="24"
+                  height="24"
+                  className="w-6 h-6 mr-3"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+                  ></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
+                  ></path>
+                </svg>
+                Log In
+              </Button>
+            </Link>
+          </Grid>
+        </Grid>
+      </Container>
     </div>
   );
 }
