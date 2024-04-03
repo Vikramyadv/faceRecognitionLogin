@@ -38,7 +38,17 @@ function UserSelect() {
 
   return (
     <div className="h-full flex flex-col items-center justify-center gap-[24px] w-full max-w-[720px] mx-auto">
-      <h1 className="text-2xl font-semibold">Select a Dummy User to Log In</h1>
+      <h1
+        style={{
+          fontFamily: "Permanent Marker",
+          fontWeight: 400,
+          fontSize: "28px",
+          lineHeight: "40px",
+          color: "#3CB0AD",
+        }}
+      >
+        Select a Dummy User to Log In
+      </h1>
       <div className="w-full p-4 text-right">
         <div className="mx-auto w-full max-w-md">
           <RadioGroup value={selected} onChange={setSelected}>
@@ -74,8 +84,17 @@ function UserSelect() {
           </RadioGroup>
           {!customUser && (
             <div className="flex flex-col items-center ">
-              <h1 className="text-xl mt-4 font-semibold">
-                OR Upload Your Image to Log In
+              <h1
+                style={{
+                  fontFamily: "Avenir, sans-serif",
+                  fontWeight: 800,
+                  fontSize: "20px",
+                  lineHeight: "30px",
+                  color: "#242424",
+                  marginTop: "25px",
+                }}
+              >
+                Upload Your Image to Log In
               </h1>
               <div className="flex flex-col items-center justify-center w-full mt-3">
                 <label
@@ -97,11 +116,21 @@ function UserSelect() {
                         d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"
                       />
                     </svg>
-                    <p className="font-semibold mb-2 text-sm text-gray-500 dark:text-gray-400">
-                      Click to upload image
+                    <p
+                      style={{
+                        fontFamily: "Avenir, sans-serif",
+                        fontWeight: 400,
+                        fontSize: "14px",
+                        lineHeight: "18px",
+                        letterSpacing: "0.16px",
+                        textAlign: "center",
+                        color: "#3CB0AD",
+                      }}
+                    >
+                      Drag and drop files here or click to upload
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
-                      PNG, JPG or JPEG
+                      File types: PNG, JPG or JPEG
                     </p>
                   </div>
                   <input
@@ -151,7 +180,7 @@ function UserSelect() {
           <Link
             to="/login"
             state={{ account: selected }}
-            className="mt-4 inline-flex items-center rounded-md bg-yellow-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600"
+            className="mt-4 inline-flex items-center rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600"
           >
             Proceed Further
             <svg

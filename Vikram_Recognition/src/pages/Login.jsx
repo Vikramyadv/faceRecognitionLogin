@@ -180,18 +180,36 @@ function Login() {
   return (
     <div className="h-full flex flex-col items-center justify-center gap-[24px] max-w-[720px] mx-auto">
       {!localUserStream && !modelsLoaded && (
-        <h2 className="text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <h2
+          style={{
+            fontFamily: "Permanent Marker, cursive",
+            fontWeight: "bold",
+            fontSize: "30px",
+            lineHeight: "40px",
+            color: "#3CB0AD",
+            textAlign: "center",
+          }}
+        >
           <span className="block">
             You are Attempting to Log In With Your Face.
           </span>
-          <span className="block text-yellow-600 mt-2">Loading Models...</span>
+          <span className="block text-yellow-600 mt-2">
+            Please wait for next steps Loading...
+          </span>
         </h2>
       )}
       {!localUserStream && modelsLoaded && (
-        <h2 className="text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block text-yellow-600 mt-2">
-            Scan Your Face to Completely Log In.
-          </span>
+        <h2
+          style={{
+            fontFamily: "Permanent Marker, cursive",
+            fontWeight: "bold",
+            fontSize: "30px",
+            lineHeight: "40px",
+            color: "#3CB0AD",
+            textAlign: "center",
+          }}
+        >
+          <span>Scan your face to securely access your account</span>
         </h2>
       )}
       {localUserStream && loginResult === "SUCCESS" && (
@@ -205,7 +223,15 @@ function Login() {
         </h2>
       )}
       {localUserStream && loginResult === "FAILED" && (
-        <h2 className="text-center text-3xl font-extrabold tracking-tight text-rose-700 sm:text-4xl">
+        <h2
+          style={{
+            fontFamily: "Permanent Marker, cursive",
+            fontWeight: "bold",
+            fontSize: "30px",
+            lineHeight: "30px",
+            color: "red",
+          }}
+        >
           <span className="block mt-[56px]">
             Sorry! We did not recognize your face.
           </span>
@@ -247,9 +273,9 @@ function Login() {
                 <button
                   onClick={getLocalUserVideo}
                   type="button"
-                  className=" justify-center w-full py-2.5 px-5 mr-2 text-sm font-medium text-white bg-yellow-600 hover:bg-yellow-700 rounded-lg border border-gray-200 inline-flex items-center"
+                  className=" justify-center w-full py-2.5 px-5 mr-2 text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded-lg border border-gray-200 inline-flex items-center"
                 >
-                  Scan my face
+                  SCAN YOU FACE
                 </button>
               </>
             ) : (
