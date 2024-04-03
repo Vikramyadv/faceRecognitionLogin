@@ -21,7 +21,17 @@ function Protected() {
   return (
     <div className="bg-white pt-40 md:pt-60">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-12">
+        <h2
+          style={{
+            fontFamily: "Permanent Marker, cursive",
+            fontWeight: "bold",
+            fontSize: "30px",
+            lineHeight: "30px",
+            color: "#3CB0AD",
+            textAlign: "center",
+            marginBottom: "30px",
+          }}
+        >
           You have successfully logged in!
         </h2>
         <div className="text-center mb-24">
@@ -38,8 +48,14 @@ function Protected() {
             alt={account.fullName}
           />
           <h1
-            className="block text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-800"
             style={{
+              fontFamily: "Avenir",
+              fontWeight: "bold",
+              fontSize: "30px",
+              lineHeight: "30px",
+              color: "#3CB0AD",
+              textAlign: "center",
+              marginBottom: "30px",
               lineHeight: "1.5",
             }}
           >
@@ -52,7 +68,7 @@ function Protected() {
             }}
             className="flex gap-2 mt-12 w-fit mx-auto cursor-pointer z-10 py-3 px-6 rounded-full bg-gradient-to-r from-red-400 to-red-600"
           >
-            <span className="text-white">Log Out</span>
+            <span style={{ font: "Avenir", color: "white" }}>Log Out</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

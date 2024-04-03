@@ -213,10 +213,16 @@ function Login() {
         </h2>
       )}
       {localUserStream && loginResult === "SUCCESS" && (
-        <h2 className="text-center text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block text-yellow-600 mt-2">
-            Congrats we successfully recognize your face!
-          </span>
+        <h2
+          style={{
+            fontFamily: "Permanent Marker",
+            fontWeight: 400,
+            fontSize: "30px",
+            lineHeight: "40px",
+            color: "#3CB0AD",
+          }}
+        >
+          <span>Congrats we successfully recognize your face!</span>
           <span className="block text-yellow-600 mt-2">
             Please stay {counter} more seconds...
           </span>
